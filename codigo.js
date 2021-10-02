@@ -51,12 +51,12 @@ document.getElementById('decodificar').addEventListener('click', () => {
     
     for (let i=0; i< listaText.length; i++){
         if(listaText[i].charCodeAt() >=65 && listaText[i].charCodeAt() <= 90 ){
-            let str = String.fromCharCode((((listaText[i].charCodeAt() - 90 )- chave) % 25) + 90)
+            let str = String.fromCharCode((((listaText[i].charCodeAt() - 90 )- chave) % 26) + 90)
             result.push(str)
             console.log('if do for')
         }
         else if(listaText[i].charCodeAt() >=97 && listaText[i].charCodeAt() <= 122 ){
-            let str = String.fromCharCode((((listaText[i].charCodeAt() - 122) - chave) % 25) + 122)
+            let str = String.fromCharCode((((listaText[i].charCodeAt() - 122) - chave) % 26) + 122)
             result.push(str)
             console.log('if do for')
         }
