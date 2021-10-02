@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='codigo.js' defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+<div class="container">
+       
+            <div class="inicial">
+                <p>Insira o texto a ser codificado ou decodificado:</p>
+                <textarea name="" placeholder="Insira seu texto" id="textoInicial" cols="60" rows="10"></textarea>
+            </div>
+
+            <div class='selecionar'>
+                <select name="options" id="seleciona">
+                    <optgroup>
+                        <option disabled selected>Selecione uma opção</option>
+                        <option value="cesar">Cifra de César</option>
+                        <option value="base64">BASE64</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class='incremento'>
+                
+                <div id="incrementoCesar"> 
+                    <p>Digite o incremento:</p>
+                    <input type="number" id="chave" min="1" max="26">
+                    </div>
+    
+            </div>
+
+            <div id="vai" class="codeoudecode">
+
+                <button id="codificar">Codificar!</button>
+                <button id="decodificar" value="decodificar" >Decodificar!</button>
+            </div>
+
+            <div>   
+                <textarea name="" id="textoFinal" cols="60" rows="10"></textarea>
+            </div>
+
+       
+
+    </div>
+    </main>
+</body>
+</html>
